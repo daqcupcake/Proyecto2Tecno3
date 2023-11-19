@@ -81,11 +81,8 @@ def CrearVentProb(datosSelec,ventana):
             for j in range(len(bolitas)):
                 if checks[j].get()==1:
                     i+=1
-                
-                if i==cantcoloresSelec:
-                    texto=texto+bolitas[j][0]
                     probabilidad+=bolitas[j][1]
-                    break
+               
             
         probabilidad=probabilidad/totalbolitas
         texto+= f" es de: {probabilidad:.2f}"
